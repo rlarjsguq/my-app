@@ -1,14 +1,32 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>My-App</title>
-  <base href="https://rlarjsguq.github.io/my-app/">
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <title>Angular Tour of Heroes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
-<body>
-  <myapp></myapp>
-<script type="text/javascript" src="inline.fa46f16cc3bf02058103.bundle.js"></script><script type="text/javascript" src="polyfills.07685bca73161be59257.bundle.js"></script><script type="text/javascript" src="vendor.21ea7526facf1db73241.bundle.js"></script><script type="text/javascript" src="main.4b8830ea7795b04af93c.bundle.js"></script></body>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Polyfills -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://unpkg.com/zone.js@0.7.4?main=browser"></script>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  <link href="styles.532043307593380cd798.bundle.css" rel="stylesheet"/></head>
+
+  <body>
+    <my-app>Loading...</my-app>
+  <script type="text/javascript" src="inline.f694938a3f8e65ee663a.bundle.js"></script><script type="text/javascript" src="polyfills.07685bca73161be59257.bundle.js"></script><script type="text/javascript" src="vendor.15397ca2ff5600b99a4b.bundle.js"></script><script type="text/javascript" src="main.af6907f700162392d32e.bundle.js"></script></body>
 </html>
+
+
+<!--
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
